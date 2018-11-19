@@ -43,6 +43,7 @@ func (a *LogActivity) Metadata() *activity.Metadata {
 // Eval implements api.Activity.Eval - Logs the Message
 func (a *LogActivity) Eval(context activity.Context) (done bool, err error) {
 
+	fmt.Printf("Color Change %v",ivMessage)
 	//mv := context.GetInput(ivMessage)
 	message, _ := context.GetInput(ivMessage).(string)
 
